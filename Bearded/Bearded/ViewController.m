@@ -33,7 +33,7 @@
     
 }
 
-- (void) pinchZoomBeardView:(UIPinchGestureRecognizer *)sender {
+- (void) pinchZoomBeard:(UIPinchGestureRecognizer *)sender {
     
     UIView *beard = [sender view];
     
@@ -49,7 +49,7 @@
     }
 }
 
-- (void) panBeardView:(UIPanGestureRecognizer *)sender {
+- (void) panBeard:(UIPanGestureRecognizer *)sender {
     
     UIView *beard = [sender view];
     
@@ -57,7 +57,7 @@
         
         // Get the panning move point relative to the parent view
         CGPoint translation = [sender translationInView:[beard superview]];
-        // NSLog(@"x: %1.2f, y: %1.2f",translation.x,translation.y);
+        //NSLog(@"x: %1.2f, y: %1.2f",translation.x,translation.y);
         
         // Add it to the center point of the beard view so that it stays
         // under the finger of the user
