@@ -120,4 +120,35 @@
 
 }
 
+- (UIImage *) blendImages {
+    UIImage *photoImage = self.photoView.image;
+    UIImage *beardImage = self.beardView.image;
+    
+    //Get the size of the photo
+    CGSize photoSize = CGSizeMake(photoImage.size.width, photoImage.size.height);
+    
+    //Create a bitmap graphics context of the photoSize
+    UIGraphicsBeginImageContext(photoSize);
+    
+    //Draw the photo in the specified rectangle area
+    [photoImage drawInRect:CGRectMake(0, 0, photoSize.width, photoSize.height)];
+    
+    CGPoint origin = self.beardView.frame.origin;
+    CGSize size = self.beardView.frame.size;
+    
+    CGFloat xScale = photoImage.size.width / self.view.bounds.size.width;
+    CGFloat yScale = photoImage.size.height / (self.view.bounds.size.height - 44);
+    
+    //Draw the beard in the specified rectangle area
+    [beardImage drawInRect:CGRectMake((origin.x * xScale), (origin.y * yScale), (size.width * xScale), (size.height * yScale)) blendMode:kCGBlendModeNormal alpha:1.0];
+    
+    //Save the generated image to an image object
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+    
+}
+
 @end
