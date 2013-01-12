@@ -23,6 +23,10 @@
 		C7851CF916A2056E001F7AF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7851CD116A2056D001F7AF9 /* Foundation.framework */; };
 		C7851D0116A2056E001F7AF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7851CFF16A2056E001F7AF9 /* InfoPlist.strings */; };
 		C7851D0416A2056E001F7AF9 /* BeardedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7851D0316A2056E001F7AF9 /* BeardedTests.m */; };
+		C7851D1216A20DD0001F7AF9 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7851D0E16A20DD0001F7AF9 /* photo.png */; };
+		C7851D1316A20DD0001F7AF9 /* beard.png in Resources */ = {isa = PBXBuildFile; fileRef = C7851D0F16A20DD0001F7AF9 /* beard.png */; };
+		C7851D1416A20DD0001F7AF9 /* beard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7851D1016A20DD0001F7AF9 /* beard@2x.png */; };
+		C7851D1516A20DD0001F7AF9 /* photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7851D1116A20DD0001F7AF9 /* photo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		C7851D0016A2056E001F7AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7851D0216A2056E001F7AF9 /* BeardedTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeardedTests.h; sourceTree = "<group>"; };
 		C7851D0316A2056E001F7AF9 /* BeardedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeardedTests.m; sourceTree = "<group>"; };
+		C7851D0E16A20DD0001F7AF9 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		C7851D0F16A20DD0001F7AF9 /* beard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beard.png; sourceTree = "<group>"; };
+		C7851D1016A20DD0001F7AF9 /* beard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beard@2x.png"; sourceTree = "<group>"; };
+		C7851D1116A20DD0001F7AF9 /* photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 		C7851CD516A2056D001F7AF9 /* Bearded */ = {
 			isa = PBXGroup;
 			children = (
+				C7851D0D16A20DA9001F7AF9 /* Images */,
 				C7851CDE16A2056E001F7AF9 /* AppDelegate.h */,
 				C7851CDF16A2056E001F7AF9 /* AppDelegate.m */,
 				C7851CE716A2056E001F7AF9 /* MainStoryboard_iPhone.storyboard */,
@@ -158,6 +167,17 @@
 				C7851CFF16A2056E001F7AF9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7851D0D16A20DA9001F7AF9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C7851D0E16A20DD0001F7AF9 /* photo.png */,
+				C7851D0F16A20DD0001F7AF9 /* beard.png */,
+				C7851D1016A20DD0001F7AF9 /* beard@2x.png */,
+				C7851D1116A20DD0001F7AF9 /* photo@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +256,10 @@
 				C7851CE416A2056E001F7AF9 /* Default@2x.png in Resources */,
 				C7851CE616A2056E001F7AF9 /* Default-568h@2x.png in Resources */,
 				C7851CE916A2056E001F7AF9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C7851D1216A20DD0001F7AF9 /* photo.png in Resources */,
+				C7851D1316A20DD0001F7AF9 /* beard.png in Resources */,
+				C7851D1416A20DD0001F7AF9 /* beard@2x.png in Resources */,
+				C7851D1516A20DD0001F7AF9 /* photo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

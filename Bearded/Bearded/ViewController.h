@@ -10,4 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *photoView;
+
+@property (strong, nonatomic) IBOutlet UIImageView *beardView;
+
+
+
 @end
