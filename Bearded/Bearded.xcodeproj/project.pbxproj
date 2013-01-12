@@ -17,7 +17,6 @@
 		C7851CE416A2056E001F7AF9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7851CE316A2056E001F7AF9 /* Default@2x.png */; };
 		C7851CE616A2056E001F7AF9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7851CE516A2056E001F7AF9 /* Default-568h@2x.png */; };
 		C7851CE916A2056E001F7AF9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7851CE716A2056E001F7AF9 /* MainStoryboard_iPhone.storyboard */; };
-		C7851CEC16A2056E001F7AF9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7851CEA16A2056E001F7AF9 /* MainStoryboard_iPad.storyboard */; };
 		C7851CEF16A2056E001F7AF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7851CEE16A2056E001F7AF9 /* ViewController.m */; };
 		C7851CF716A2056E001F7AF9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7851CF616A2056E001F7AF9 /* SenTestingKit.framework */; };
 		C7851CF816A2056E001F7AF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7851CCF16A2056D001F7AF9 /* UIKit.framework */; };
@@ -51,7 +50,6 @@
 		C7851CE316A2056E001F7AF9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C7851CE516A2056E001F7AF9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C7851CE816A2056E001F7AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		C7851CEB16A2056E001F7AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C7851CED16A2056E001F7AF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C7851CEE16A2056E001F7AF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C7851CF516A2056E001F7AF9 /* BeardedTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeardedTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +120,6 @@
 				C7851CDE16A2056E001F7AF9 /* AppDelegate.h */,
 				C7851CDF16A2056E001F7AF9 /* AppDelegate.m */,
 				C7851CE716A2056E001F7AF9 /* MainStoryboard_iPhone.storyboard */,
-				C7851CEA16A2056E001F7AF9 /* MainStoryboard_iPad.storyboard */,
 				C7851CED16A2056E001F7AF9 /* ViewController.h */,
 				C7851CEE16A2056E001F7AF9 /* ViewController.m */,
 				C7851CD616A2056D001F7AF9 /* Supporting Files */,
@@ -239,7 +236,6 @@
 				C7851CE416A2056E001F7AF9 /* Default@2x.png in Resources */,
 				C7851CE616A2056E001F7AF9 /* Default-568h@2x.png in Resources */,
 				C7851CE916A2056E001F7AF9 /* MainStoryboard_iPhone.storyboard in Resources */,
-				C7851CEC16A2056E001F7AF9 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +311,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		C7851CEA16A2056E001F7AF9 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7851CEB16A2056E001F7AF9 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		C7851CFF16A2056E001F7AF9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -393,6 +381,7 @@
 				GCC_PREFIX_HEADER = "Bearded/Bearded-Prefix.pch";
 				INFOPLIST_FILE = "Bearded/Bearded-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,6 +393,7 @@
 				GCC_PREFIX_HEADER = "Bearded/Bearded-Prefix.pch";
 				INFOPLIST_FILE = "Bearded/Bearded-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
