@@ -76,4 +76,48 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cameraBtnAction:(id)sender {
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take a Picture", @"Choose from Library", nil];
+    
+    [actionSheet showInView:self.view];
+    
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+
+    //Create a new image picker instance:
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    
+    //Set the image picker source:
+    switch (buttonIndex) {
+        case 0:
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            break;
+        
+        case 1:
+            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            break;
+            
+        default:
+            break;
+    }
+    
+    picker.delegate = self;
+    
+    //Show picker if Take a picture or Choose from Library is selected
+    if (buttonIndex == 0 || buttonIndex == 1) {
+        [self presentViewController:picker animated:YES completion:nil];
+    }
+    
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+
+    self.photoView.image = [info valueForKey:UIImagePickerControllerOriginalImage];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+
 @end
