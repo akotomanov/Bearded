@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+//#define IS_IPHONE_5 (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)568) < DBL_EPSILON)
+
 @interface ViewController ()
 
 @end
@@ -30,6 +32,12 @@
     [self.beardView addGestureRecognizer:panGestureRecognizer];
     
     self.beardView.userInteractionEnabled = YES;
+    
+    self.photoView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    
+//    if (IS_IPHONE_5) {
+//        self.photoView.image = [UIImage imageNamed:@"photo-tall.png"];
+//    }
     
 }
 
