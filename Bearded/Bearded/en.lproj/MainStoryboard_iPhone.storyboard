@@ -30,7 +30,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="R2U-Sg-Km1"/>
-                                    <barButtonItem systemItem="action" id="Mh4-BT-xYY"/>
+                                    <barButtonItem systemItem="action" id="Mh4-BT-xYY">
+                                        <connections>
+                                            <action selector="shareBtnAction:" destination="2" id="g2L-dZ-867"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -54,6 +58,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="cameraBtnAction:"/>
+                <relationship kind="action" name="shareBtnAction:"/>
                 <relationship kind="outlet" name="beardView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="photoView" candidateClass="UIImageView"/>
             </relationships>

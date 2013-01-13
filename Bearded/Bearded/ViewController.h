@@ -18,5 +18,7 @@
 
 - (IBAction)cameraBtnAction:(id)sender;
 
+- (IBAction)shareBtnAction:(id)sender;
+
 
 @end

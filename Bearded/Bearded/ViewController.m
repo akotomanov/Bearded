@@ -84,6 +84,22 @@
     
 }
 
+- (IBAction)shareBtnAction:(id)sender {
+    
+    //An array of content that needs to posted
+    NSArray *activityItems = @[@"You have been Bearded!", UIImageJPEGRepresentation([self blendImages], 0.75)];
+    
+    //Create a new UIActivityViewController with the activityItems array
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    //Exclude activities that are irrelevant
+    activityController.excludedActivityTypes = @[UIActivityTypePostToWeibo,UIActivityTypePrint,UIActivityTypeCopyToPasteboard,UIActivityTypeAssignToContact];
+    
+    //Present the activityController
+    [self presentViewController:activityController animated:YES completion:nil];
+    
+}
+
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 
     //Create a new image picker instance:
