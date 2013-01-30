@@ -475,6 +475,7 @@
 				C7851D0916A2056E001F7AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7851D0A16A2056E001F7AF9 /* Build configuration list for PBXNativeTarget "BeardedTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				C7851D0C16A2056E001F7AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
